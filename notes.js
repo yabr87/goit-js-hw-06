@@ -14,3 +14,4 @@ el.hasAttribute('src'); // повертає true или false
 
 // https://www.youtube.com/watch?v=Haq2JIuE6Rg
 // 30:50  data атрибуты
+// _.debounse -бібліотека lodash. слухач "input" спрацовує після завершення вписування тексту через вказаний час

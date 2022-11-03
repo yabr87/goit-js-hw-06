@@ -1,0 +1,29 @@
+let counterValue = 0;
+const counter = document.querySelector('#value');
+const decrementBtn = document.querySelector('button[data-action="decrement"]');
+const incrementBtn = document.querySelector('button[data-action="increment"]');
+
+const render = () => {
+  // counter.innerHTML = '';
+  // counter.insertAdjacentHTML('afterbegin', `${counterValue}`);
+  counter.textContent = counterValue;
+};
+
+const incrementClick = () => {
+  counterValue += 1;
+  render();
+};
+
+const decrementClick = () => {
+  if (counterValue <= 0) {
+    alert('Значення не може бути меньше 0!');
+  } else {
+    counterValue -= 1;
+    render();
+  }
+};
+
+render();
+
+decrementBtn.addEventListener('click', decrementClick);
+incrementBtn.addEventListener('click', incrementClick);
