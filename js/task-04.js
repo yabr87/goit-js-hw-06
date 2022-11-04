@@ -15,12 +15,8 @@ const incrementClick = () => {
 };
 
 const decrementClick = () => {
-  if (counterValue <= 0) {
-    alert('Значення не може бути меньше 0!');
-  } else {
-    counterValue -= 1;
-    render();
-  }
+  counterValue -= 1;
+  render();
 };
 
 render();
